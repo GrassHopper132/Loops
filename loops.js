@@ -16,9 +16,28 @@ for (let i = 1; i <= 100; i++) {
   }
 }
 
+// Prime Time
+console.log("\n--- Part 2: Prime Time ---");
+let n = 4;
+let currentNumber = n + 1; 
+let foundPrime = false; g
 
-
-
+while (foundPrime === false) {
+  let isPrime = true;
+  for (let i = 2; i < currentNumber; i++) {
+    if (currentNumber % i === 0) {
+      isPrime = false;
+      break; 
+    }
+  }
+  if (isPrime === true) {
+    console.log(currentNumber);
+    foundPrime = true; 
+  } else {
+    
+    currentNumber++; 
+  }
+}
 
 // Loops lab
 // feeling loopy
